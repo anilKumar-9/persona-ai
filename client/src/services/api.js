@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Change this when you deploy
 const api = axios.create({
-  baseURL: "https://persona-ai-vgx4-jjuvzkn1o-anilkumar-9s-projects.vercel.app/api",
+  baseURL: "https://persona-ai-q1q2.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
