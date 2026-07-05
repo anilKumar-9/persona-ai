@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Change this when you deploy
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://persona-ai-vgx4-jjuvzkn1o-anilkumar-9s-projects.vercel.app/api",
   headers: {
     "Content-Type": "application/json",
   },
