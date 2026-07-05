@@ -3,6 +3,7 @@ import cors from "cors";
 
 import chatRoutes from "./routes/ChatRoutes.js";
 import errorHandler from "./middleware/errorHandler.js";
+import "dotenv/config"
 
 const app = express();
 
@@ -11,7 +12,9 @@ const app = express();
 ------------------------------ */
 
 // Enable CORS
-app.use(cors());
+app.use(cors({
+   origin:process.env.ORIGIN
+}));
 
 // Parse JSON Request Body
 app.use(express.json());
