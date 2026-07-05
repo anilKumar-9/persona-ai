@@ -16,11 +16,11 @@ function ChatBox() {
   const activePersona = personaNames[persona] || persona;
 
   return (
-    <div className="flex h-screen flex-col">
-      <div className="border-b border-slate-700 bg-slate-900 p-5">
-        <div className="flex items-center justify-between gap-4">
+    <div className="flex h-full min-h-0 flex-col">
+      <div className="border-b border-slate-700 bg-slate-900 p-3 sm:p-5">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="text-xl font-semibold text-white">
+            <h2 className="text-lg font-semibold text-white sm:text-xl">
               AI Persona Chat
             </h2>
             <p className="mt-1 text-sm text-slate-400">
@@ -32,7 +32,7 @@ function ChatBox() {
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto bg-slate-900 p-6">
+      <div className="flex-1 overflow-y-auto bg-slate-900 p-3 sm:p-6">
         <div className="mx-auto flex max-w-4xl flex-col gap-4">
           {messages.map((message) => (
             <Message
@@ -47,7 +47,7 @@ function ChatBox() {
         </div>
       </div>
 
-      <div className="border-t border-slate-700 bg-slate-900 p-5">
+      <div className="border-t border-slate-700 bg-slate-900 p-3 sm:p-5">
         <MessageInput />
       </div>
     </div>

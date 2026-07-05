@@ -6,10 +6,14 @@ function Message({ role, content, persona }) {
     <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
       <div
         className={`
-          max-w-[75%]
+          max-w-[85%]
           rounded-2xl
-          px-4
+          px-3
           py-3
+          text-sm
+          sm:max-w-[75%]
+          sm:px-4
+          sm:text-base
           shadow-md
           ${
             isUser

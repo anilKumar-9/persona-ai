@@ -15,7 +15,7 @@ function PersonaSelector() {
   const { persona, setPersona } = useChat();
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
       <label htmlFor="persona" className="text-sm font-medium text-slate-300">
         Persona
       </label>
@@ -29,8 +29,9 @@ function PersonaSelector() {
           border
           border-slate-700
           bg-slate-800
-          px-4
+          px-3
           py-2
+          text-sm
           text-white
           outline-none
           focus:border-blue-500

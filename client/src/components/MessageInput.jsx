@@ -23,7 +23,7 @@ function MessageInput() {
   };
 
   return (
-    <div className="mx-auto flex max-w-4xl items-end gap-3">
+    <div className="mx-auto flex w-full max-w-4xl items-end gap-2 sm:gap-3">
       <textarea
         rows={1}
         value={message}
